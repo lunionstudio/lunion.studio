@@ -1,0 +1,76 @@
+@import url("https://use.typekit.net/fjv3lni.css");
+
+* {
+  font-family: termina, sans-serif;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+body, html, h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  color: #FFF;
+  font-size: 1.3rem;
+}
+
+.wrapper .column {
+  flex: 0 0 50%;
+}
+
+.wrapper .column.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .column.left .title {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.wrapper .column.left .subtitle {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #DB5656;
+}
+
+.wrapper .column.right .link {
+  display: flex;
+  gap: 15px;
+}
+
+.wrapper .column.right .link .icon {
+  width: 25px;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .wrapper .column.right {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .wrapper .column.right {
+    font-size: 1.3rem;
+  }
+}
